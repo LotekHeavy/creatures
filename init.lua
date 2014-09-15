@@ -1,7 +1,7 @@
 creatures = {}
 
 -- Max number of mobs per mapblock
-creatures.zombie_max = 3
+creatures.zombie_max = 4
 creatures.ghost_max = 1
 creatures.sheep_max = 4
 
@@ -25,7 +25,7 @@ end
 creatures.spawned = {}
 local spawn_day = 600
 local tod = 0
-local absolute_mob_max = 50
+local absolute_mob_max = 64
 
 local function timer(tick)
 	tod = tod + 1
@@ -135,7 +135,7 @@ function creatures.attack(self, pos1, pos2, dist, range)
 	if dist < range and self.attacking_timer > 0.6 then
 		self.attacker:punch(self.object, 1.0,  {
 				full_punch_interval=1.0,
-				damage_groups = {fleshy=1}
+				damage_groups = {fleshy=4}
 		})
 		self.attacking_timer = 0
 	end
