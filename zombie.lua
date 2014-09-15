@@ -1,8 +1,8 @@
-local z_chillaxin_speed = 1.5
+local z_chillaxin_speed = 2
 local z_animation_speed = 15
 local z_mesh = "creatures_mob.x"
 local z_texture = {"creatures_zombie.png"}
-local z_hp = 20
+local z_hp = 60
 local z_drop = "creatures:rotten_flesh"
 local z_life_max = 80 --~5min
 
@@ -14,7 +14,7 @@ local z_sound_normal = "creatures_zombie"
 local z_sound_hit = "creatures_zombie_hit"
 local z_sound_dead = "creatures_zombie_death"
 
-creatures.z_spawn_nodes = {"default:dirt_with_grass","default:stone","default:dirt","default:desert_sand"}
+creatures.z_spawn_nodes = {"default:dirt_with_grass","default:stone","default:dirt","default:desert_sand","woodsoil:dirt_with_leaves_1","woodsoil:dirt_with_leaves_2","woodsoil:grass_with_leaves_1","woodsoil:grass_with_leaves_2"}
 creatures.z_spawner_range = 17
 creatures.z_spawner_max_mobs = 6
 
