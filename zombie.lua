@@ -1,8 +1,8 @@
-local z_chillaxin_speed = 2
+local z_chillaxin_speed = 1.5
 local z_animation_speed = 15
 local z_mesh = "creatures_mob.x"
 local z_texture = {"creatures_zombie.png"}
-local z_hp = 60
+local z_hp = 70
 local z_drop = "creatures:rotten_flesh"
 local z_life_max = 80 --~5min
 
